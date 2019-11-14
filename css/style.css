@@ -487,3 +487,22 @@ section {
   -webkit-transform: translateX(-4em);
   -ms-transform: translateX(-4em);
   transform: translateX(-4em); }
+
+.understanding {
+  background: white; }
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+  svg .container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden; }
