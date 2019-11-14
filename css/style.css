@@ -487,12 +487,3 @@ section {
   -webkit-transform: translateX(-4em);
   -ms-transform: translateX(-4em);
   transform: translateX(-4em); }
-
-@media (min-width: 768px) {
-  .crane .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; } }
