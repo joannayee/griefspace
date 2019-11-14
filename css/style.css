@@ -1,6 +1,3 @@
-body {
-  background-color: #c1e6f4; }
-
 /* CSS TABLE OF CONTENTS *
 
 #GLOBAL CSS
@@ -258,7 +255,6 @@ body {
 
 /* Site header */
 .site-header, .site-footer {
-  background-color: #ff9900;
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,8 +375,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 6em;
-  background-color: #c1e6f4; }
+  margin-top: 6em; }
 
 .site-footer .site-nav ul {
   display: -webkit-box;

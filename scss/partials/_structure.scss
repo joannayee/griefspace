@@ -1,6 +1,5 @@
 /* Site header */
  .site-header, .site-footer {
-     background-color: $color-accent;
      padding: 1em;
      display: flex;
      color: black;
@@ -108,7 +107,7 @@
 .site-footer {
     justify-content: center;
     margin-top: 6em;
-    background-color: $bodybackground;
+    // background-color: $bodybackground;
 }
 .site-footer .site-nav {
     ul {
