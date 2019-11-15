@@ -218,22 +218,22 @@ opacity: 0;
 
 //crane// 
 // .crane {
-   .understanding {
-       background: white;
-   }
-    svg {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: rotate(180deg);
-      
-      .container {
-        display: inline-block;
-        position: relative;
-        width: 100%;
-        padding-bottom: 100%;
-        vertical-align: middle;
-        overflow: hidden;
-      }
-    }
+.understanding {
+    background: white;
+}
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.site-footer .container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}

@@ -13,21 +13,28 @@ margin: 0 auto;
 
 }
 @media (min-width: $breakpoint-small) {
-    body{font-size: 100%;
+    body { 
+        font-size: 100%; 
+    }
+    .container { 
+        background: red;
+    }
 }
 @media (min-width: $breakpoint-medium) {
     
-    .container { max-width: $breakpoint-medium;
-
-    }
-}
-}
-@media (min-width: $breakpoint-medium) {
-    body{ 
-        font-size: 112.5%;
-    }
-    .container {
+    .container { 
         max-width: $breakpoint-medium;
+        background: green;
+    }
+}
+
+@media (min-width: $breakpoint-large) {
+    body {  
+        font-size: 112.5%; 
+    }
+    .container { 
+        max-width: $breakpoint-large; 
+        background: blue;
     }
 }
 
