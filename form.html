@@ -36,24 +36,37 @@
         </nav>
     </header>
 
-    <section class="hero" data-scroll="out">
+    <section class="form">
         <div class="container">
-            <img src="img/home_crane.gif">
-            <a href="#typography" class="btn btn-1 dark">Welcome</a>
+            <div class="row">
+                <div class="column one-half">
+                    <img src="img/blue.png" alt="crane">
+                </div>
+                <div class="column one-half">
+                    <form>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" />
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email" />
+                        <label for="message">Message: </label>
+                        <textarea id="message" name="message"></textarea>
+                        <input type="submit" value="Submit" />
+                    </form>
+                    <div class="crane-line">
+                        <li><a class="crane-color" href="#"><img src="img/blue.png" alt="crane"></a></li>
+                        <li><a class="crane-color" href="#"><img src="img/orange.png" alt="crane"></a></li>
+                        <li><a class="crane-color" href="#"><img src="img/yellow.png" alt="crane"></a></li>
+                        <li><a class="crane-color" href="#"><img src="img/red.png" alt="crane"></a></li>
+                        <li><a class="crane-color" href="#"><img src="img/aqua.png" alt="crane"></a></li>
+                        <li><a class="crane-color" href="#"><img src="img/pink.png" alt="crane"></a></li>
+                        <li><a class="crane-color" href="#"><img src="img/green.png" alt="crane"></a></li>
+
+                    </div>
+                </div>
+            </div>
+            <a href="crane.html" class="btn-1 btn">Submit</a>
         </div>
     </section>
-
-
-
-    <footer class="site-footer">
-        <nav class="site-nav">
-            <ul>
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="understanding.html"> Understanding Grief</a></li>
-                <li><a href="#layout"> Get Support</a></li>
-            </ul>
-        </nav>
-    </footer>
 
     <!--Smooth Scroll-->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>

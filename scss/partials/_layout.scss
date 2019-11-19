@@ -17,14 +17,14 @@ margin: 0 auto;
         font-size: 100%; 
     }
     .container { 
-        background: red;
+        // background: red;
     }
 }
 @media (min-width: $breakpoint-medium) {
     
     .container { 
         max-width: $breakpoint-medium;
-        background: green;
+        // background: green;
     }
 }
 
@@ -34,7 +34,7 @@ margin: 0 auto;
     }
     .container { 
         max-width: $breakpoint-large; 
-        background: blue;
+        // background: blue;
     }
 }
 
