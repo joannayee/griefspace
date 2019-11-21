@@ -215,9 +215,9 @@ opacity: 0;
 [data-scroll="out"].split-crossed-reversed .text-block{
     transform: translateX(-4em);
 }
+//UNDERSTANDING// 
 
-//crane// 
-// .crane {
+
 .understanding {
     background: white;
 }
@@ -238,6 +238,10 @@ svg {
     overflow: hidden;
 }
 
+//crane// 
+.crane {
+    background: $color-hero-bg;
+}
 .crane-color {
     .img {
         border-radius: 100%;
