@@ -412,7 +412,7 @@ section {
   place-items: center; }
 
 .hero {
-  padding: 6em 0;
+  padding: 4em 0;
   background: white;
   color: black; }
   .hero p {
@@ -423,6 +423,11 @@ section {
     display: flex;
     font-size: 4em;
     line-height: 1; }
+
+.hero .img {
+  max-width: 600px;
+  margin-left: -200px;
+  margin-right: -200px; }
 
 /*Layout*/
 @media (min-width: 768px) {

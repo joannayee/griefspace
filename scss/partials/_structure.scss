@@ -129,10 +129,11 @@ section {
 }
 
 .hero {
-    padding: 6em 0;
+    padding: 4em 0;
     background: $color-hero-bg;
     // margin-bottom: 3em;
     color: black; 
+    // overflow-x: hidden;
     
 
     p {
@@ -148,7 +149,12 @@ h2 {
 
 }   
 }
-
+.hero .img {
+    max-width: 600px;
+    margin-left: -200px;
+    margin-right: -200px;
+   
+}
 /*Layout*/
 .split-crossed-right{
    @media (min-width: $breakpoint-small) {
