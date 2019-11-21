@@ -511,7 +511,7 @@ svg {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-.site-footer .container {
+.site-footer .footerimg {
   display: inline-block;
   position: relative;
   width: 100%;
