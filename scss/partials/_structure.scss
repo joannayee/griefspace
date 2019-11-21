@@ -265,19 +265,44 @@ svg {
     background-color: rgba(227, 218, 214, 0.5); //any color
     color: #fff;
   }
-
-  /*FORM*/
-  @media (min-width:$breakpoint-medium) {
-  .message-form .container{
-    width: 100vh;
-    margin-top: 150px;
-    margin-left: 0;
-    margin-right: 0;
+  /*MESSAGE-FORM*/
+  @media (min-width:$breakpoint-small) {
+    .message-form .container{
+      width: 100vh;
+      margin-top: 150px;
+      margin-left: 0;
+      margin-right: 0;
+      align-content: center;
+    }
+    .message-form{
+        background: $bodybackground;
+    }
   }
-  .message-form{
-      background: $bodybackground;
+  @media (max-width:$breakpoint-medium) {
+    .message-form .container{
+        width: 100vh;
+      margin-top: 150px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .message-form{
+        background: $bodybackground;
+    }
   }
+  
+  .crane-line {
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    margin-bottom: 2em;
 }
+
+.big-crane .img {
+      width: 500px;
+      height: auto;
+}
+  /*FORM*/
+ 
 form {
     max-width: 600px;
   }
@@ -310,14 +335,4 @@ form {
     font-size: inherit;
   }
   
-  .crane-line {
-      position: relative;
-      display: inline-flex;
-      list-style: none;
-      margin-bottom: 2em;
-  }
-
-  .big-crane .img {
-        width: 500px;
-        height: auto;
- }
+  

@@ -549,8 +549,19 @@ svg {
   background-color: rgba(227, 218, 214, 0.5);
   color: #fff; }
 
-/*FORM*/
-@media (min-width: 1050px) {
+/*MESSAGE-FORM*/
+@media (min-width: 768px) {
+  .message-form .container {
+    width: 100vh;
+    margin-top: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+  .message-form {
+    background: #c1e6f4; } }
+
+@media (max-width: 1050px) {
   .message-form .container {
     width: 100vh;
     margin-top: 150px;
@@ -559,6 +570,19 @@ svg {
   .message-form {
     background: #c1e6f4; } }
 
+.crane-line {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  margin-bottom: 2em; }
+
+.big-crane .img {
+  width: 500px;
+  height: auto; }
+
+/*FORM*/
 form {
   max-width: 600px; }
 
@@ -584,15 +608,3 @@ input[type=submit] {
   width: auto;
   margin-top: 1em;
   font-size: inherit; }
-
-.crane-line {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  list-style: none;
-  margin-bottom: 2em; }
-
-.big-crane .img {
-  width: 500px;
-  height: auto; }
