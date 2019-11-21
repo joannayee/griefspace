@@ -267,6 +267,14 @@ svg {
   }
 
   /*FORM*/
+  @media (min-width:$breakpoint-medium) {
+  .message-form .container{
+    width: 200vh;
+    margin-top: 200px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 form {
     max-width: 600px;
   }
@@ -299,6 +307,7 @@ form {
   }
   
   .crane-line {
-      display: absolute;
+      position: relative;
+      display: inline-flex;
       list-style: none;
   }

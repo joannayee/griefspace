@@ -12,7 +12,7 @@ $gutter-width: 2%;
     .row {
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
         margin-left: -$gutter-width/2;
         margin-right: -$gutter-width/2;
 &.swap{
