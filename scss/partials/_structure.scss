@@ -269,10 +269,13 @@ svg {
   /*FORM*/
   @media (min-width:$breakpoint-medium) {
   .message-form .container{
-    width: 200vh;
-    margin-top: 200px;
+    width: 100vh;
+    margin-top: 150px;
     margin-left: 0;
     margin-right: 0;
+  }
+  .message-form{
+      background: $bodybackground;
   }
 }
 form {
@@ -287,6 +290,7 @@ form {
   
   label {
     margin-top: 1em;
+
   }
   
   input[type="text"], textarea {
@@ -310,4 +314,10 @@ form {
       position: relative;
       display: inline-flex;
       list-style: none;
+      margin-bottom: 2em;
   }
+
+  .big-crane .img {
+        width: 500px;
+        height: auto;
+ }

@@ -552,10 +552,12 @@ svg {
 /*FORM*/
 @media (min-width: 1050px) {
   .message-form .container {
-    width: 200vh;
-    margin-top: 200px;
+    width: 100vh;
+    margin-top: 150px;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .message-form {
+    background: #c1e6f4; } }
 
 form {
   max-width: 600px; }
@@ -588,4 +590,9 @@ input[type=submit] {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 2em; }
+
+.big-crane .img {
+  width: 500px;
+  height: auto; }
