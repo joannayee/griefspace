@@ -74,3 +74,20 @@ $gutter-width: 2%;
         grid-auto-flow: dense;
     }
 }
+
+.understanding-grid, .support-grid {
+
+    display:grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            list-style: none;
+        }
+}

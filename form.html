@@ -40,7 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="column one-half">
-                    <img class="big-crane" src="img/blue.png" alt="crane">
+                    <img class="big-crane" src="img/blue.png" id="currentImg" alt="crane" title="Blue Crane">
                 </div>
                 <div class="column one-half">
                     <form>
@@ -52,22 +52,56 @@
                     </form>
                     <h4>Choose origami and color</h4>
 
-                    <div class="crane-line">
+                    <ul class="crane-line colorpicker">
 
-                        <li><a class="crane-color" href="#"><img src="img/blue.png" alt="crane"></a></li>
-                        <li><a class="crane-color" href="#"><img src="img/orange.png" alt="crane"></a></li>
-                        <li><a class="crane-color" href="#"><img src="img/yellow.png" alt="crane"></a></li>
-                        <li><a class="crane-color" href="#"><img src="img/red.png" alt="crane"></a></li>
-                        <li><a class="crane-color" href="#"><img src="img/aqua.png" alt="crane"></a></li>
-                        <li><a class="crane-color" href="#"><img src="img/pink.png" alt="crane"></a></li>
-                        <li><a class="crane-color" href="#"><img src="img/green.png" alt="crane"></a></li>
-
-                    </div>
+                        <li><a class="crane-color"><img src="img/blue.png" onclick="showImage('img/blue.png','Blue');"
+                                    data-pin-nopin="true"><br>Blue</a></li>
+                        <li><a class="crane-color"><img src="img/orange.png"
+                                    onclick="showImage('img/orange.png','Orange');" data-pin-nopin="true"><br>Orange
+                            </a>
+                        </li>
+                        <li><a class="crane-color"><img src="img/yellow.png"
+                                    onclick="showImage('img/yellow.png','Yellow');" data-pin-nopin="true"><br>Yellow</a>
+                        </li>
+                        <li><a class="crane-color"><img src="img/red.png" onclick="showImage('img/red.png','Red');"
+                                    data-pin-nopin="true"><br>Red</a>
+                        </li>
+                        <li><a class="crane-color"><img src="img/aqua.png" onclick="showImage('img/aqua.png', 'Aqua');"
+                                    data-pin-nopin="true"><br>Aqua</a>
+                        </li>
+                        <li><a class="crane-color"><img src="img/pink.png" onclick="showImage('img/pink.png','Pink');"
+                                    data-pin-nopin="true"><br>Pink</a>
+                        </li>
+                        <li><a class="crane-color"><img src="img/green.png"
+                                    onclick="showImage('img/green.png','Green');" data-pin-nopin="true"><br>Green</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <a href="crane.html" class="btn-1 btn">Submit</a>
         </div>
     </section>
+    <!--Color Switcher-->
+    <script src="js/variation-switcher.js"></script>
+    <script type="text/javascript">
+        function showImage(imgName, imgText) {
+            var curImage = document.getElementById('currentImg');
+            var textDiv = document.getElementById('rightText');
+
+            curImage.src = imgName;
+            curImage.alt = imgName;
+            curImage.title = imgName;
+            textDiv.innerHTML = imgText;
+        }
+
+        function preLoadImages() {
+            var tmp = new Array();
+            for (var i = 0; i < attributes.length; i++) {
+                tmp[i] = new Image();
+                tmp[i].src = attributes[i];
+            }
+        }
+    </script>
 
     <!--Smooth Scroll-->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
