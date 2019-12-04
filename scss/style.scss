@@ -29,18 +29,3 @@ $breakpoint-large: 1250px;
 @import "partials/grid";  
 @import "partials/structure";  
 
-.colorpicker {
-    list-style-type:none;
-}
-
-.colorpicker li {
-    float: left;
-    list-style-type:none;
-    text-align: center;
-}
-
-.colorpicker li img {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-}
