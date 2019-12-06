@@ -596,6 +596,22 @@ svg {
   .message-form .btn {
     margin-top: 100px; } }
 
+@media (min-width: 1050px) {
+  .message-form.container.btn.btn-1 {
+    margin-bottom: 100px; }
+  .message-form .btn {
+    margin-top: 50px; }
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  ul {
+    list-style: none; } }
+
+.column.one-half {
+  width: 300px;
+  height: auto; }
+
 .crane-line.colorpicker {
   padding-left: 0; }
 
