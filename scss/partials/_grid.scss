@@ -65,7 +65,13 @@ $gutter-width: 2%;
         list-style: none;
     }
 
+    img {
+        transition: all .2s ease-out;
+    &:hover{
+        // width:150px;
+        transform: scale(1.1);
 
+    }
 
 }
 @media  (max-width:$breakpoint-small) {
@@ -75,19 +81,11 @@ $gutter-width: 2%;
     }
 }
 
-.understanding-grid, .support-grid {
-
-    display:grid;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: repeat(3, 1fr);
-
-        li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        ul{
-            list-style: none;
-        }
 }
+.support-grid, .understanding-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    grid-column-gap: 8px;
+}
+

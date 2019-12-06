@@ -331,28 +331,28 @@ svg {
         margin-top: 100px;
     }
   }
-  @media (min-width:$breakpoint-medium) {
-    .message-form.container.btn.btn-1 {
-        margin-bottom: 100px;
-    }
-    .message-form .btn {
-        margin-top: 50px;
-    }
+//   @media (min-width:$breakpoint-medium) {
+//     .message-form.container.btn.btn-1 {
+//         margin-bottom: 100px;
+//     }
+//     .message-form .btn {
+//         margin-top: 50px;
+//     }
     
-        li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        ul{
-            list-style: none;
-        }
-    }
-    .column.one-half {
-        width: 300px;
-        height: auto;
+//         li {
+//             margin: 0;
+//             padding: 0;
+//             list-style: none;
+//         }
+//         ul{
+//             list-style: none;
+//         }
+//     }
+//     .column.one-half {
+//         width: 300px;
+//         height: auto;
     
-}
+// }
 .crane-line.colorpicker {
     padding-left: 0;
 }
@@ -403,7 +403,7 @@ svg {
   /*FORM*/
   @media (min-width:$breakpoint-medium) {
     form {
-        min-width: 535px;
+        min-width: 5px;
       }
       
       label, input, textarea {
@@ -495,4 +495,7 @@ form {
         transform: scale(1.1);
 
     }
+}
+link{
+    text-decoration: none;
 }
