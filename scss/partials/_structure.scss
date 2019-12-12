@@ -279,7 +279,7 @@ svg {
   @media (min-width:$breakpoint-small) {
     .message-form .container{
     //   width: 100vh;
-      margin-top: 150px;
+      margin-top: 140px;
       margin-left: 0;
       margin-right: 0;
       align-content: center;
@@ -319,11 +319,9 @@ svg {
             list-style: none;
         }
     }
-    .column.one-half {
-        width: 300px;
-        height: auto;
+
         
-    }
+    
     .message-form.container.btn.btn-1 {
         margin-bottom: 100px;
     }
@@ -368,6 +366,7 @@ svg {
     }
     .crane-line.colorpicker {
         padding-left: 0;
+        margin-left:-15px;
     }
     .crane-line {
         display: grid; 
@@ -395,10 +394,11 @@ svg {
 .big-crane {
       min-width: 300px;
       height: auto;
+      padding:25px;
 
-      @media (min-width:$breakpoint-medium) {
-        margin-left: -100px;
-      }
+    //   @media (min-width:$breakpoint-medium) {
+    //     margin-left: -100px;
+    //   }
 }
   /*FORM*/
   @media (min-width:$breakpoint-medium) {
@@ -437,6 +437,11 @@ svg {
   
 form {
     max-width: 600px;
+}
+    @media (min-width:$breakpoint-medium) {
+        form {
+            min-width: 500px;
+          }
   }
   
   label, input, textarea {

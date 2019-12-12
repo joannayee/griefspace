@@ -556,7 +556,7 @@ svg {
 /*MESSAGE-FORM*/
 @media (min-width: 768px) {
   .message-form .container {
-    margin-top: 150px;
+    margin-top: 140px;
     margin-left: 0;
     margin-right: 0;
     -ms-flex-line-pack: center;
@@ -588,9 +588,6 @@ svg {
       list-style: none; }
     .crane-line ul {
       list-style: none; }
-  .column.one-half {
-    width: 300px;
-    height: auto; }
   .message-form.container.btn.btn-1 {
     margin-bottom: 100px; }
   .message-form .btn {
@@ -623,7 +620,8 @@ svg {
   .message-form .btn {
     margin-top: 50px; }
   .crane-line.colorpicker {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-left: -15px; }
   .crane-line {
     display: -ms-grid;
     display: grid;
@@ -644,10 +642,8 @@ svg {
 
 .big-crane {
   min-width: 300px;
-  height: auto; }
-  @media (min-width: 1050px) {
-    .big-crane {
-      margin-left: -100px; } }
+  height: auto;
+  padding: 25px; }
 
 /*FORM*/
 @media (min-width: 1050px) {
@@ -674,6 +670,10 @@ svg {
 
 form {
   max-width: 600px; }
+
+@media (min-width: 1050px) {
+  form {
+    min-width: 500px; } }
 
 label, input, textarea {
   display: block;
