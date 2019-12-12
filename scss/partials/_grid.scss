@@ -51,6 +51,7 @@ $gutter-width: 2%;
 
 
 /* Crane Grid */
+@media  (max-width:$breakpoint-large) {
 .crane-grid {
     margin: 0;
     padding: 0;
@@ -74,8 +75,17 @@ $gutter-width: 2%;
     }
 
 }
+}
+@media  (max-width:$breakpoint-medium) {
+    .crane-grid {
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-flow: dense;
+    }
+}
 @media  (max-width:$breakpoint-small) {
     .crane-grid {
+        display:grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-flow: dense;
     }
