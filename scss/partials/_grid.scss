@@ -84,7 +84,7 @@ $gutter-width: 2%;
     }
 }
 @media  (max-width:$breakpoint-small) {
-    .crane-grid {
+  .crane-grid {
         display:grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-flow: dense;
