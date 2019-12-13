@@ -174,6 +174,16 @@ img {
   max-width: 100%;
   height: auto; }
 
+.home .hero {
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 80vh; }
+
+.home .hero img {
+  max-height: 60vh; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -251,50 +261,37 @@ body {
   text-align: center; }
 
 /* Crane Grid */
-@media (max-width: 1250px) {
-  .crane-grid {
+.crane-grid {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr); }
+  .crane-grid li {
     margin: 0;
     padding: 0;
-    display: -ms-grid;
-    display: grid;
+    list-style: none; }
+  .crane-grid img {
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+    .crane-grid img:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+
+@media (min-width: 1250px) {
+  .crane-grid {
     -ms-grid-columns: (1fr)[5];
     grid-template-columns: repeat(5, 1fr); }
-    .crane-grid li {
-      margin: 0;
-      padding: 0;
-      list-style: none; }
-    .crane-grid img {
-      -webkit-transition: all .2s ease-out;
-      -o-transition: all .2s ease-out;
-      transition: all .2s ease-out; }
-      .crane-grid img:hover {
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); } }
-
-@media (max-width: 1250px) and (max-width: 1050px) {
-  .crane-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[5];
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-flow: dense; } }
-
-@media (max-width: 1250px) and (max-width: 768px) {
-  .crane-grid {
+  .support-grid, .understanding-grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: dense; } }
-
-.support-grid, .understanding-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
-  list-style: none;
-  grid-column-gap: 8px; }
+    list-style: none;
+    grid-column-gap: 8px; } }
 
 /* Site header */
 .site-header, .site-footer {
@@ -317,7 +314,6 @@ body {
 /* Site Header*/
 .site-header {
   background-color: transparent;
-  position: absolute;
   width: 100%; }
 
 /*Menu Button*/
@@ -434,7 +430,6 @@ body {
 /* Section */
 section {
   padding: 6em, 0;
-  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   place-items: center; }

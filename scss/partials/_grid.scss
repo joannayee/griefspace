@@ -15,28 +15,30 @@ $gutter-width: 2%;
         // align-items: center;
         margin-left: -$gutter-width/2;
         margin-right: -$gutter-width/2;
-&.swap{
-    flex-direction: row-reverse;}
-// &.center {
-//     display: block;
-//     .column {
-//         margin-left: auto;
-//         margin-right: auto;
-//     }
-&.center{
-    flex-direction: column;
-    align-items: center;
-}
-}
+        &.swap{
+            flex-direction: row-reverse;}
+        // &.center {
+        //     display: block;
+        //     .column {
+        //         margin-left: auto;
+        //         margin-right: auto;
+        //     }
+        &.center{
+            flex-direction: column;
+            align-items: center;
+        }
     }
-    .column{
-        // color: red;
-        flex-grow: 1;
-        margin: $gutter-width/2;
-        &.one-half {width: 50%-$gutter-width;}
-        &.one-third {width: 33.3333%-$gutter-width;}
-        &.two-third {width: 66.6666%-$gutter-width;}
-        &.one-fourth {width: 25%-$gutter-width;}
+}
+
+    
+.column{
+    // color: red;
+    flex-grow: 1;
+    margin: $gutter-width/2;
+    &.one-half {width: 50%-$gutter-width;}
+    &.one-third {width: 33.3333%-$gutter-width;}
+    &.two-third {width: 66.6666%-$gutter-width;}
+    &.one-fourth {width: 25%-$gutter-width;}
 
 }
 
@@ -51,13 +53,13 @@ $gutter-width: 2%;
 
 
 /* Crane Grid */
-@media  (max-width:$breakpoint-large) {
+
 .crane-grid {
     margin: 0;
     padding: 0;
     display: grid;
     // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
     li {
@@ -68,30 +70,23 @@ $gutter-width: 2%;
 
     img {
         transition: all .2s ease-out;
-    &:hover{
-        // width:150px;
-        transform: scale(1.1);
+        &:hover{
+            // width:150px;
+            transform: scale(1.1);
 
+            }
+
+        }
     }
 
-}
-}
-@media  (max-width:$breakpoint-medium) {
-    .crane-grid {
-        display:grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-auto-flow: dense;
-    }
-}
-@media  (max-width:$breakpoint-small) {
-  .crane-grid {
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-flow: dense;
-    }
+@media  (min-width:$breakpoint-large) {
+.crane-grid {
+    grid-template-columns: repeat(5, 1fr);
 }
 
-}
+
+
+
 .support-grid, .understanding-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -99,3 +94,4 @@ $gutter-width: 2%;
     grid-column-gap: 8px;
 }
 
+}

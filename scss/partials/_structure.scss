@@ -18,7 +18,7 @@
  /* Site Header*/ 
 .site-header {
     background-color: transparent;
-    position: absolute;
+    // position: absolute;
     width: 100%;
 }
  
@@ -126,7 +126,6 @@
 /* Section */
 section {
     padding: 6em, 0;
-    min-height: 100vh;
     display: grid;
     place-items: center;
 }
